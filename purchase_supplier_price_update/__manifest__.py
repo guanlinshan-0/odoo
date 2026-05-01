@@ -1,26 +1,24 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Purchase Supplier Price Auto Update",
-    'summary': "Auto update product supplier price when purchase order confirmed",
+    'name': "Purchase Supplier Price Update",
+    'summary': "Auto update supplier price when purchase order confirmed",
     'description': """
-This module automatically updates the product's supplier price in the product master data when a purchase order is confirmed.
+Automatically update product supplier price when confirming a purchase order.
 Key Features:
-1. Triggered after purchase order confirmation
-2. Update the latest purchase price to product supplier info
-3. Only update price and currency fields of supplier info
-4. Skip empty product/supplier and non-material product lines
-5. Detailed log records for update status
+- Update supplier price automatically after PO confirmation
+- Only update existing supplier info records
+- Support currency synchronization
+- Safe & stable without extra configuration
     """,
     'author': "guanlinshan",
-    'website': "",
+    'website': "https://www.guanlinshan.com.cn",
     'category': 'Purchases',
-    'version': '18',
-    'depends': ['purchase'],
-    'data': [
-        'views/views.xml',
-        'views/templates.xml',
-    ],
+    'version': '18.0.1.0.0',
     'license': 'OPL-1',
+    'depends': ['purchase'],
+    'price': 1.0,
+    'currency': 'EUR',
+    'support': 'support@yourdomain.com',
     'installable': True,
     'application': False,
     'auto_install': False,
